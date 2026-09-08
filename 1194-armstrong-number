@@ -1,0 +1,13 @@
+n=245
+
+def is_armstrong(n):
+    digits=len(str(n))
+    result=0
+    num=n
+    while num>0:
+        ld=num%10
+        result+=ld**digits
+        num//=10
+    return result==n
+
+print(is_armstrong(n))
